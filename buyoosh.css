@@ -1,0 +1,97 @@
+body {
+    margin:0px;
+    padding: 0px;
+    background-color: lightcoral;
+    font-family: Gurina;
+    letter-spacing: 3px;
+    direction: rtl;
+}
+
+h1, h2, h3 {
+    letter-spacing: 7px;
+    color: firebrick;
+    margin-right: 20px;
+    font-size: 550%;
+}
+
+h1{
+    color: antiquewhite;
+    text-shadow: 2px 2px #b50b13;
+}
+
+h3 {
+    font-size: 250%;
+}
+
+tr {
+    background-color: deeppink;
+}
+
+tr:nth-child(2n-1) {
+    background-color: hotpink;
+}
+
+table{
+    direction: ltr;
+}
+
+form {
+    color: firebrick;
+    font-size: 130%;
+    padding: 1em;
+    padding-top: 0em;
+}
+
+@font-face {
+    font-family: Gurina;
+    src: url(first.otf);
+}
+
+li a {
+    margin-right: 1em;
+    font-size: 140%;
+    display: block;
+    width: 200px;
+    display: block;
+    color: lightblue;
+    padding: 8px 8px 8px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: peachpuff;
+    color: darkred;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0.5em;
+    width: 14em;
+    background-color: indianred;
+}
+
+#narrow {
+    padding: 0em;
+    float: right;
+    width: 15em;
+    background: lightblue;
+}
+#wide {
+    float: left;
+    padding: 1em;
+    width: calc(100% - 320px);
+    background-color: lightpink;
+}
+
+#text {
+
+}
+
+#pic{
+    border-style: solid; border-width: 6px; border-color: #F0E68C;
+    width:500px;height:500px;border-radius:50%;
+}
+
+p{
+    font-size: 220%;
+}
