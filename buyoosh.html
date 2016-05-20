@@ -12,11 +12,15 @@
 
 <form>
     <input class="search" type="text" placeholder= "מה חסר?" required>
-    <input class="button" type="button" value="חפשי">
-    <input class="button" type="button" value="הוסיפי" onclick="javascript:addshoppinglistitem()">
+    <input class="button" type="button" value="zmani"
+    onclick="javascript:CompareAndAdd(getNewItem())">
+    <input class="button" type="button" value="חפשי"
+      onclick="javascript:checkIfSimilarItemExits(getNewItem())">
+    <input class="button" type="button" value="הוסיפי"
+      onclick="javascript:addShoppingListItem(getNewItem())">
 </form>
 
-<ul id="shoppinglist">
+<ul id="DaShoppinglist">
 </ul>
 
 </body>

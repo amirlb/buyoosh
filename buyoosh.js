@@ -1,9 +1,60 @@
+var shoppingList = [];
 
-function addshoppinglistitem()
+function getNewItem()
 {
-    var newitemtext = document.getElementsByClassName("search")[0].value;
+  var newItem = document.getElementsByClassName("search")[0].value;
+  return newItem;
+}
+
+function isItemInList(item){
+  for(i=0;i<shoppingList.length;i++){
+    if (shoppingList[i] === newItem){
+      return true;
+      }
+  }
+  return false;
+}
+
+function CompareAndAdd(newItem)
+{
+  var doesItemExists = isItemInList(newItem);
+  if (doesItemExists){
+    var ShouldAddItem = confirm ("קיים פריט דומה. להוסיף בכל זאת?");
+    if (ShouldAddItem) {
+      addShoppingListItem(newItem);
+
+    }
+    else {
+      return;
+    }
+  }
+  else {
+    addShoppingListItem(newItem);
+  }
+}
+
+function addShoppingListItem(newItem)
+{
     var node = document.createElement("LI");
-    var textnode = document.createTextNode(newitemtext);
+    var textnode = document.createTextNode(newItem);
     node.appendChild(textnode);
-    document.getElementById("shoppinglist").appendChild(node);
+    document.getElementById("DaShoppinglist").appendChild(node);
+
+    shoppingList.push(newItem);
+}
+
+function checkIfSimilarItemExits(newItem)
+{
+    for(i=0;i<shoppingList.length;i++){
+      if (shoppingList[i] === newItem){
+          var ShouldAddItem = confirm ("קיים פריט דומה. להוסיף בכל זאת?");
+          if(ShouldAddItem)
+            {
+              addShoppingListItem(newItem);
+            }
+            return;
+
+        }
+    }
+
 }
