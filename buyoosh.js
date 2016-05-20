@@ -8,7 +8,7 @@ function getNewItem()
 
 function isItemInList(item){
   for(i=0;i<shoppingList.length;i++){
-    if (shoppingList[i] === newItem){
+    if (shoppingList[i] === item){
       return true;
       }
   }
@@ -41,20 +41,4 @@ function addShoppingListItem(newItem)
     document.getElementById("DaShoppinglist").appendChild(node);
 
     shoppingList.push(newItem);
-}
-
-function checkIfSimilarItemExits(newItem)
-{
-    for(i=0;i<shoppingList.length;i++){
-      if (shoppingList[i] === newItem){
-          var ShouldAddItem = confirm ("קיים פריט דומה. להוסיף בכל זאת?");
-          if(ShouldAddItem)
-            {
-              addShoppingListItem(newItem);
-            }
-            return;
-
-        }
-    }
-
 }
