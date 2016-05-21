@@ -84,6 +84,9 @@ footer {
   margin: auto;
   border-top: #a02 1px solid;
   text-align: center;
+  bottom: 0;
+  width: 100%;
+  position: fixed;
 }
 
 .icon_holder {
