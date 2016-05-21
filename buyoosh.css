@@ -77,3 +77,25 @@ ul {
 p{
     font-size: 220%;
 }
+
+footer {
+  height: 4em;
+  background-color: #ccc;
+  margin: auto;
+  border-top: #a02 1px solid
+}
+
+.icon_holder {
+  color: #a02;
+  background-color: #ccc;
+  display: inline-block;
+  position: relative;
+  right: 50%;
+  -webkit-transform: translateX(+50%);
+  top: 1.5em;
+}
+
+.fa {
+  font-size: 24pt;
+  margin-right: 0.25em;
+}
