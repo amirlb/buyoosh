@@ -82,7 +82,8 @@ footer {
   height: 4em;
   background-color: #ccc;
   margin: auto;
-  border-top: #a02 1px solid
+  border-top: #a02 1px solid;
+  text-align: center;
 }
 
 .icon_holder {
@@ -90,8 +91,6 @@ footer {
   background-color: #ccc;
   display: inline-block;
   position: relative;
-  right: 50%;
-  -webkit-transform: translateX(+50%);
   top: 1.5em;
 }
 
