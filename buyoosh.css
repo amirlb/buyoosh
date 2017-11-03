@@ -1,6 +1,6 @@
-
 body {
-  text-align: center;
+  font-family: Roboto;
+
   margin: 0;
   padding: 0;
   background-color: whitesmoke;
@@ -9,40 +9,67 @@ body {
   direction: rtl;
 }
 
-h2, h3 {
-  color: firebrick;
+h1 {
+  background: #a02;
+  color: white;
+  margin: 0;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: normal;
 }
 
-h1{
-  color: #a02;
-}
-
-h3 {
-    font-size: 250%;
-}
-
-tr {
-    background-color: deeppink;
+/*tr {
+  background-color: deeppink;
 }
 
 tr:nth-child(2n-1) {
-    background-color: hotpink;
+  background-color: hotpink;
 }
 
 table{
-    direction: ltr;
+  direction: ltr;
+}*/
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-@font-face {
-    font-family: Gurina;
-    src: url(first.otf);
+/*
+ul {
+    text-align: right;
+    list-style-type: none;
+    padding: 0.5em;
+    width: 14em;
+    background-color: indianred;
+}*/
+
+li {
+  background: #fff;
+  height: 40px;
+  line-height: 40px;
+  color: #666;
+}
+
+span {
+  background: #e74c3c;
+  height: 40px;
+  margin-right: 20px;
+  text-align: center;
+  color: white;
+  width: 0;
+  display: inline-block;
+  transition: 0.2s linear;
+  opacity: 0;
 }
 
 li a {
     margin-right: 1em;
     font-size: 140%;
     display: block;
-    width: 200px;
+    width: 90%;
     display: block;
     color: lightblue;
     padding: 8px 8px 8px 12px;
@@ -54,13 +81,47 @@ li a:hover {
     color: darkred;
 }
 
-ul {
-    text-align: right;
-    list-style-type: none;
-    padding: 0.5em;
-    width: 14em;
-    background-color: indianred;
+input {
+  font-size: 18px;
+  color: #a02;
+  background-color: #f7f7f7;
+  width: 100%;
+  padding: 13px 13px 13px 20px;
+  /* prefixes for browsers other than Chrome may be needed */
+  box-sizing: border-box;
+  border: 3px solid rgba(0,0,0,0);
 }
+
+input:focus {
+  background: #fff;
+  border: 3px solid #a02;
+  color: #444;
+  outline: none;
+}
+
+li:nth-child(2n) {
+  background: #f7f7f7;
+}
+
+/*when hover over li, span appears (its width changes from 0 to 40px)*/
+li:hover span {
+  width: 40px;
+  opacity: 1.0;
+}
+
+#container {
+  width: 90%;
+  margin: 100px auto;
+  background: #f7f7f7;
+}
+
+/* Large screens */
+/*@media (min-width:768px){
+  #container {
+    width: 40%;
+  }
+}*/
+
 
 p {
   color: black;
@@ -79,14 +140,10 @@ header {
   position: fixed;
 }
 
-.body {
-  top: 8em;
-  position: relative;
-}
-
 footer {
   bottom: 0;
   position: fixed;
+  text-align: center;
 }
 
 .icon_holder {
@@ -96,11 +153,20 @@ footer {
   position: relative;
 }
 
+.completed {
+  color: gray;
+  text-decoration: line-through;
+}
+
 .fa {
   font-size: 24pt;
   margin-right: 0.25em;
 }
 
-.sList {
-  display: inline-block;
+.fa-plus {
+  float: left;
 }
+
+/*.sList {
+  display: inline-block;
+}*/

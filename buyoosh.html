@@ -1,19 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <script src="https://use.fontawesome.com/8f61b97be3.js"></script>
   <link rel="stylesheet" type="text/css" href="buyoosh.css">
   <link rel="stylesheet" type="text/css" href="buyoosh-opt02.css">
-  <script src="buyoosh.js"></script>
   <title>Buyoosh</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,500" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
 </head>
 <body>
   <header>
-    <h1>Buyoosh</h1>
+    <h1>רשימת כניעות<i class="fa fa-plus"></i></h1>
   </header>
   <div class="body">
-    <form>
+    <div id="container">
+
+      <input type="text" placeholder="מה חסר?" required>
+
+      <ul>
+        <li><span><i class="fa fa-trash"></i></span> פיל</li>
+        <li><span><i class="fa fa-trash"></i></span> צב</li>
+        <li><span><i class="fa fa-trash"></i></span> דג</li>
+      </ul>
+
+    </div>
+
+    <!-- <form>
         <input class="search" type="text" placeholder= "מה חסר?" required>
         <input class="button" type="button" value="+"
                onclick="javascript:CompareAndAdd(getNewItem())">
@@ -22,16 +35,16 @@
       <ul id="DaShoppinglist">
       </ul>
     </div>
-  </div>
+  </div> -->
   <footer>
     <p>הלמטה של האפליקציה</p>
     <div class="icon_holder">
       <i class="fa fa-github" aria-hidden="true"></i>
       <i class="fa fa-pied-piper" aria-hidden="true"></i>
       <i class="fa fa-bomb" aria-hidden="true"></i>
-      <i class="fa fa-cloud" aria-hidden="true"></i>
-      <i class="fa fa-film" aria-hidden="true"></i>
     </div>
   </footer>
+
+  <script src="buyoosh.js"></script>
 </body>
 </html>
