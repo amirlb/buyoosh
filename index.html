@@ -2,27 +2,34 @@
 <html>
 <head>
   <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,500" rel="stylesheet" type="text/css">
   <script src="https://use.fontawesome.com/8f61b97be3.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/journal/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="buyoosh.css">
   <link rel="stylesheet" type="text/css" href="buyoosh-opt02.css">
-  <link rel="stylesheet" type="text/css" href="mobile.css">
   <title>Buyoosh</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,500" rel="stylesheet" type="text/css">
-  <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
 </head>
 <body>
   <header>
-    <h1>רשימת כניעות<i class="fa fa-plus"></i></h1>
+    <h1>רשימת כניעות</h1>
   </header>
   <div class="body">
     <div id="container">
-
-      <input type="text" placeholder="מה חסר?" required>
+      <div class="searchContainer">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="input-group">
+              <input type="text" class="list-group-item" placeholder="מה צריך?">
+              <span class="input-group-btn"><button class="searchImage" class="btn btn-default" type="button"><i class="fa fa-plus"></i></button></span>
+            </div><!-- /input-group -->
+          </div><!-- /.col-lg -->
+        </div><!-- /.row -->
+      </div>
 
       <ul>
-        <li><span><i class="fa fa-trash"></i></span> פיל</li>
-        <li><span><i class="fa fa-trash"></i></span> צב</li>
-        <li><span><i class="fa fa-trash"></i></span> דג</li>
+        <li class="list-group-item"><span><i class="fa fa-trash"></i></span> פיל</li>
+        <li class="list-group-item"><span><i class="fa fa-trash"></i></span> צב</li>
+        <li class="list-group-item"><span><i class="fa fa-trash"></i></span> דג</li>
       </ul>
 
     </div>
@@ -45,7 +52,8 @@
       <i class="fa fa-bomb" aria-hidden="true"></i>
     </div>
   </footer>
-
+  <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="buyoosh.js"></script>
 </body>
 </html>
