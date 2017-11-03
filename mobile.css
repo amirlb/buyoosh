@@ -1,0 +1,33 @@
+/* Smaller screens */
+@media (max-width:500px){
+  li {
+    height: 100px;
+    line-height: 100px;
+  }
+
+  span {
+    height: 100px;
+    margin-right: 50px;
+  }
+
+  li a {
+      margin-right: 1em;
+      font-size: 280%;
+      padding: 16px 16px 16px 24px;
+  }
+
+  input {
+    font-size: 36px;
+    padding: 26px 26px 26px 40px;
+  }
+
+  #container {
+    margin: 200px auto;
+  }
+
+  .fa {
+    font-size: 48pt;
+    margin-right: 0.25em;
+  }
+
+}
