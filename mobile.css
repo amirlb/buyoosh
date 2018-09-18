@@ -1,4 +1,4 @@
-/* Smaller screens */
+/* Smaller screens, such as mobile phones */
 @media (max-width:500px){
   li {
     height: 100px;
@@ -18,7 +18,7 @@
 
   input {
     font-size: 36px;
-    padding: 26px 26px 26px 40px;
+    padding: 26px 26px 26px 40px; 
   }
 
   #container {
